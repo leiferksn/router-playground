@@ -1,17 +1,17 @@
-<div id = "outer" style="height: 100vh; width: 100vw; display: flex; flex-direction: column;  ">
-    <div id= "inner_fixed" style="background-color: antiquewhite; display: flex; height: 6em;">
+<div id = "outer">
+    <div id= "inner_fixed">
         <app-menu></app-menu>
     </div>
-    <div id="inner_remaining "style="flex: 1; width: 100%; height:100%; background-color: azure; display: flex; flex-direction: column;" >
-        <div style="display: flex; padding: 1em; border: 1px; border-style: dashed; height: 4em; align-items: center;">
+    <div id="inner_remaining" >
+        <div class="order">
             <h1> {{ getOrder }} </h1>
         </div>
-        <div style="overflow: auto; flex: 1; display: flex;">
+        <div class="container_div">
             <app-container></app-container>
         </div>
-        <div style="position: absolute; top: 12em; left: 15em; border: 0.1em; border-style: solid; border-color: gray; height: 30em; width: 20em; margin: 1em; box-shadow: 0.5em 0.5em 1.4em 0em; z-index: 18; background-color: lightgoldenrodyellow; border-radius: 0.5em;">
-            <h4 style="padding: 1em;"> Tree </h4>
-            <ul style="border: 0.1em; border-style: solid; margin: 1em; padding: 1.5em; border-color: lightslategray;">
+        <div class="tree">
+            <h4 class="tree_heading"> Tree </h4>
+            <ul class="highest_tree_lvl">
                 <li>
                     A
                 </li>
